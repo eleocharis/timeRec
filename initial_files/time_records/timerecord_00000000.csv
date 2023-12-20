@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+job_no,date,customer,project,content,start,end,workload,hLohn,lohn,RechNr,bill_send,bill_paid
+=======
+AuftrNr,date,customer,project,content,start,end,workload,hLohn,lohn,RechNr,bill_send,bill_paid
+>>>>>>> 3b32f3e (The timecounter for a surveyer alpha version 0.1)

@@ -1,0 +1,56 @@
+\documentclass[fontsize=11pt, a4paper]{scrartcl}
+
+\usepackage[paper=a4paper, left=22mm, right=22mm, top=26mm, bottom=30mm]{geometry}
+\usepackage[ngerman]{babel}	
+\usepackage{ngerman}			%Wichtig für Umlaute
+%\usepackage{babel} 
+\usepackage{eurosym}
+
+\begin{document}
+	\sffamily
+	\flushleft
+	\pagestyle{empty}
+	\begin{flushright}
+		\begin{large}YOUR NAME\end{large}\\
+		\begin{tiny}\hrulefill \\\end{tiny} 
+		ADRESSE \\
+		CITY\\
+		TELEPHONE\\
+		MAILADRESS\\
+	\end{flushright}
+	\vspace{1cm}
+	
+	\input{customer} % Address from address file
+	
+	
+	\begin{flushright}
+		\today \vspace{0.5cm}
+	\end{flushright}
+	
+	\textbf{Rechnung Nr. \input{bill_number}}\bigskip\bigskip
+	
+	Sehr geehrte Damen und Herren,\bigskip
+	
+	folgende Leistungen wurden erbracht und erfreuen sich über die Entlohnung.
+	
+	\input{bill_table}
+	
+	\begin{flushright}
+		{\footnotesize \input{taxes}}
+	\end{flushright}
+	\bigskip
+	
+	Bitte überweisen Sie die Summe auf das folgende Konto:\\
+	Konto \\
+	IBAN: \bigskip
+	
+	Ich bedanke mich für die gute Zusammenarbeit. \bigskip
+	
+	Mit freundlichen Grüßen\bigskip\bigskip
+	
+	
+	NAME\medskip
+	
+	
+	
+\end{document}
